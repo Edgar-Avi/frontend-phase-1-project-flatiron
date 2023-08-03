@@ -1,4 +1,14 @@
-fetch('https://rickandmortyapi.com/api/character')
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(error => console.log(error))
+function getCharacters(rickApi) {
+
+    const results = fetch("https://rickandmortyapi.com/api/character");
+
+    results
+        .then(response => response.json())
+        .then(data => {
+            rickApi(data)
+        });
+}
+
+getCharacters(data => {
+    console.log(data);
+});
