@@ -12,15 +12,19 @@ function getCharacters(rickApi) {
 getCharacters(data => {
    data.results.forEach(characters => {
 
-    const article = document.createRange().createContextualFragment( /*html*/`
+    const article = document.createRange().createContextualFragment( 
+    /*html*/`
     <article>
 
         <div class="image-container">
-            <img src="${characters.image}" alt="Character">
+            <img src="${characters.image}" alt="CharacterImg">
         </div>
 
         <h2>${characters.name}</h2>
-        <span>${characters.status}</span>
+        <span>Status: ${characters.status}</span><br>
+        <span>Species: ${characters.species}</span><br>
+        <span>Gender: ${characters.gender}</span>
+
 
     </article>
     `);
