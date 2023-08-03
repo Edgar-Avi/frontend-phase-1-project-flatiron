@@ -10,5 +10,9 @@ function getCharacters(rickApi) {
 }
 
 getCharacters(data => {
+   data.results.forEach(characters => {
+
     console.log(data);
+    
+   });
 });
