@@ -17,17 +17,36 @@
 <body>
 
     <h1>Rick and Morty Characters</h1>
-<!-- search button -->
+    <!-- search button -->
     <form action="">
         <input type="text" id="search-bar" placeholder="Seach for character">
         <button id="search-button">search</button>
     </form>
-
-    <main></main>
+    <br>
+    <!-- character status -->
+    <label for="character-status">Seach Status: </label>
+    <select name="character-status" id="status" required>
+        <option value="alive">Alive</option>
+        <option value="dead">Dead</option>
+        <option value="unknown">Unknown</option>
+    </select>
+    <br>
+    <!-- character gender -->
+    <label for="gender-status">Gender: </label>
+    <select name="gender-status" id="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="genderless">Genderless</option>
+        <option value="unknown-gender">Unknown</option>
+    </select>
+    <br>
+    <main>
+    </main>
     <script src="main.js"></script>
+
     <footer>
         <p>Edgar Avila 2023</p>
-        <a href="#top">Back to Top</a>
+        <a href="#top">Back to Top</a></footer>
     </footer>
 </body>
 </html>
