@@ -16,14 +16,17 @@ getCharacters(data => {
     <article>
 
         <div class="image-container">
-            <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" alt="Character"></img>
+            <img src="${characters.image}" alt="Character">
         </div>
 
-        <h2>Character</h2>
-        <span>Character status</span>
+        <h2>${characters.name}</h2>
+        <span>${characters.status}</span>
 
     </article>
     `);
+
+    const main = document.querySelector("main");
+    main.append(article);
 
 
    });
