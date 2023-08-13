@@ -1,7 +1,7 @@
 function getCharacters(rickApi) {
 const searchInput = document.querySelector("[data-search]")
    let user = []
-
+//search-bar
 searchInput.addEventListener("input", e => {
     const value = e.target.value.toLowerCase()
     user.forEach(user => {
@@ -9,6 +9,11 @@ searchInput.addEventListener("input", e => {
         user.element.classList.toggle("hide", !isVisible)
     })
     console.log(value)
+
+const getCharacters = document.getElementById("search")
+    getCharacters.addEventListener("click", () => {
+        search()
+    })
 
 })
     const results = fetch("https://rickandmortyapi.com/api/character");
