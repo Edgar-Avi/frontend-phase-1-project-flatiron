@@ -1,19 +1,32 @@
 function getCharacters(rickApi) {
+const searchInput = document.querySelector("[data-search]")
+   let user = []
 
+searchInput.addEventListener("input", e => {
+    const value = e.target.value.toLowerCase()
+    user.forEach(user => {
+        const isVisible = user.name.includes(value)
+        user.element.classList.toggle("hide", !isVisible)
+    })
+    console.log(value)
+
+ 
+})
     const results = fetch("https://rickandmortyapi.com/api/character");
 
     results
         .then(response => response.json())
         .then(data => {
             rickApi(data)
-        });
+        })
 }
 
 getCharacters(data => {
-   data.results.forEach(characters => {
+   getCharacters = data.results.map(characters => {
+
 
     const article = document.createRange().createContextualFragment( 
-    /*html*/`
+        /*html*/`
     <article>
 
         <div class="image-container">
@@ -25,13 +38,13 @@ getCharacters(data => {
         <span>Species: ${characters.species}</span><br>
         <span>Gender: ${characters.gender}</span>
 
-
     </article>
-    `);
+    `)
 
     const main = document.querySelector("main");
     main.append(article);
 
+    return {name: characters.name}
 
-   });
-});
+   })
+})
