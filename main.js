@@ -10,7 +10,6 @@ searchInput.addEventListener("input", e => {
     })
     console.log(value)
 
- 
 })
     const results = fetch("https://rickandmortyapi.com/api/character");
 
@@ -23,10 +22,8 @@ searchInput.addEventListener("input", e => {
 
 getCharacters(data => {
    getCharacters = data.results.map(characters => {
-
-
     const article = document.createRange().createContextualFragment( 
-        /*html*/`
+        /*html into main*/`
     <article>
 
         <div class="image-container">
