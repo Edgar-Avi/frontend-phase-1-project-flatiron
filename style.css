@@ -5,7 +5,7 @@
     background-image: url(https://w.wallhaven.cc/full/01/wallhaven-01zwvg.jpg);
     font-style: italic;
     color: #9ae9c2;
-    cursor: pointer;
+    cursor: pointer();
 }
 
 h1 {
