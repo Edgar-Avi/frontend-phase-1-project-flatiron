@@ -11,7 +11,7 @@ For the app page style, I wanted to explore a little with colors and style. I wa
 
 Thanks for looking, I hope you enjoy!
 
-## Some key points that this project will demonstrate are..
+## Some key points that this project will demonstrate are...
 <li>Access data form a public API
 <li>Display atleast 2 eventListeners
 <li>Implement an Array to iterate to interact with the API
@@ -24,8 +24,8 @@ In this project i used JavaScrips, HTML and CSS on Visual Studio Code.
 <br>
 <br>
 
-## Update
-<li>currently unable to have the Search Bar and the drop-down filters to retrive and display data.
+## Project Notes**
+<li>Currently unable to have the Search Bar and the drop-down filters to retrive and display data.
 
 ## 
 Public API Used form: https://rickandmortyapi.com/documentation
