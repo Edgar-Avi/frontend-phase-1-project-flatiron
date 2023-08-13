@@ -5,7 +5,11 @@
 This is my frontend phase 1 project while attending at Flatiron school.
 In this application, the objective was to create a single page app that will demonstrate some skills learned.
 
-In my appliction, the goal is to search through the Rick and Morty Show characters and display some basic information about them in a card. You can search characters by typing in their name in the search bar and have it filter through and display the characrters with the similar names. Another way to filter through the characters is by using the drop down bar and selecting the options available. The Search Status should filter through the characters by its status either Alive, Dead or Unknown. The Gender drop down option will filter through by selecting Male, Female, Genderless or Unknown. At the very bottom there is a Back to Top button that will take you back to the very top of the page.
+In my appliction, the goal is to search through the Rick and Morty Show characters and display some basic information about them in a card. You can search characters by typing in their name in the search bar and have it filter through, then display the characrters with the similar names. Another way to filter through the characters is by using the drop-down bar and selecting the options available. The Search Status should filter through the characters by its status either Alive, Dead or Unknown. The Gender drop-down option will filter through by selecting Male, Female, Genderless or Unknown. At the very bottom there is a Back to Top button that will take you back to the very top of the page as a shortcut.
+
+For the app page style, I wanted to explore a little with colors and style. I wanted to have a similar theme to the Rick and Morty show. I added soft greens colors and some glowing shadows to make it standout a bit.
+
+Thanks for looking, I hope you enjoy!
 
 ## Some key points that this project will demonstrate are..
 <li>Access data form a public API
@@ -21,7 +25,7 @@ In this project i used JavaScrips, HTML and CSS on Visual Studio Code.
 <br>
 
 ## Update
-<li>currently unable to having the Search Bar and the drop-down filters to retrive and display data.
+<li>currently unable to have the Search Bar and the drop-down filters to retrive and display data.
 
 ## 
 Public API Used form: https://rickandmortyapi.com/documentation
